@@ -11,22 +11,28 @@ import MapKit
 import SwiftSpinner
 import SnapKit
 
-class AppController: UITabBarController, Tabable, Navigable {
+class AppController: UIViewController, Tabable, Navigable {
     
     var currentViewController: UIViewController!
     var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        delegate = self
+        //delegate = self
         self.view.addSubview(self.setupNavBar())
         self.view.backgroundColor = UIColor.grayColor()
-//        self.currentViewController = ResultViewController()
+        self.currentViewController = ResultViewController()
 //        addCurrentViewController(self.currentViewController)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        self.setupTabBar()
+//    }
+    
+    override func loadView() {
+        super.loadView()
+        self.setUpView()
         self.setupTabBar()
     }
     
@@ -35,16 +41,13 @@ class AppController: UITabBarController, Tabable, Navigable {
         SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 33.0))
     }
     
-    override func loadView() {
-        super.loadView()
-        self.setUpView()
-    }
     
     
-    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
-        print("Should select viewController: \(viewController.title) ?")
-        return true;
-    }
+    
+//    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+//        print("Should select viewController: \(viewController.title) ?")
+//        return true
+//    }
 
 
     override func didReceiveMemoryWarning() {

@@ -1,5 +1,5 @@
 //
-//  ResultCell.swift
+//  ResultTableView.swift
 //  OpalOval
 //
 //  Created by Christopher Webb-Orenstein on 8/11/16.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ResultCell: UITableViewCell {
+class ResultTableView: UITableView {
     
 }

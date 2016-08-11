@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
-        let appController = AppController()
-        self.window?.rootViewController = appController
+        let tabController = TabBarController()
+        self.window?.rootViewController = tabController
         
        // let resultViewController: ResultViewController? = ResultViewController(nibName: "ResultView", bundle: nil)
         

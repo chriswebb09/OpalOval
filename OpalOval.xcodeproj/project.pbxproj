@@ -44,6 +44,7 @@
 		AF588A581D5C693800F228C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A571D5C693800F228C7 /* Request.swift */; };
 		AF588A5A1D5C69E200F228C7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A591D5C69E200F228C7 /* SearchViewController.swift */; };
 		AF588A5C1D5C6A7E00F228C7 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */; };
+		AF588A601D5C94E400F228C7 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A5F1D5C94E400F228C7 /* ResultTableView.swift */; };
 		C4E221B3E76D3BC5FBDB0276 /* Pods_OpalOval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		AF588A571D5C693800F228C7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Utils/Request.swift; sourceTree = "<group>"; };
 		AF588A591D5C69E200F228C7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
 		AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFont.swift; path = Utils/AppFont.swift; sourceTree = "<group>"; };
+		AF588A5F1D5C94E400F228C7 /* ResultTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTableView.swift; path = Views/ResultTableView.swift; sourceTree = "<group>"; };
 		B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpalOval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 		AF3535F91D5C59C30001F117 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF588A5F1D5C94E400F228C7 /* ResultTableView.swift */,
 				AF3535F71D5C59B10001F117 /* ResultView.swift */,
 				AF35360B1D5C5B3D0001F117 /* ResultCell.swift */,
 			);
@@ -364,6 +367,7 @@
 				AF588A401D5C60E600F228C7 /* Navigable.swift in Sources */,
 				AF588A5C1D5C6A7E00F228C7 /* AppFont.swift in Sources */,
 				AF588A421D5C668400F228C7 /* CitySDKAPIClient.swift in Sources */,
+				AF588A601D5C94E400F228C7 /* ResultTableView.swift in Sources */,
 				AF588A541D5C681600F228C7 /* Mapable.swift in Sources */,
 				AF3536121D5C5B8C0001F117 /* CitySDKData.swift in Sources */,
 				AF3535FC1D5C5A040001F117 /* APIRequest.swift in Sources */,
