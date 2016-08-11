@@ -41,6 +41,8 @@
 		AF588A501D5C67C400F228C7 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A4F1D5C67C400F228C7 /* ScoreModel.swift */; };
 		AF588A521D5C67E600F228C7 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A511D5C67E600F228C7 /* ResultModel.swift */; };
 		AF588A541D5C681600F228C7 /* Mapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A531D5C681600F228C7 /* Mapable.swift */; };
+		AF588A561D5C68FF00F228C7 /* LaborStatisticsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */; };
+		AF588A581D5C693800F228C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A571D5C693800F228C7 /* Request.swift */; };
 		C4E221B3E76D3BC5FBDB0276 /* Pods_OpalOval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		AF588A4F1D5C67C400F228C7 /* ScoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreModel.swift; path = Models/ScoreModel.swift; sourceTree = "<group>"; };
 		AF588A511D5C67E600F228C7 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultModel.swift; path = Models/ResultModel.swift; sourceTree = "<group>"; };
 		AF588A531D5C681600F228C7 /* Mapable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mapable.swift; path = Controllers/Mapable.swift; sourceTree = "<group>"; };
+		AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaborStatisticsData.swift; path = Models/LaborStatisticsData.swift; sourceTree = "<group>"; };
+		AF588A571D5C693800F228C7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Utils/Request.swift; sourceTree = "<group>"; };
 		B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpalOval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,6 +201,7 @@
 				AF588A451D5C670800F228C7 /* LaborStatisticsAPIClient.swift */,
 				AF588A471D5C672800F228C7 /* USAJobsAPIClient.swift */,
 				AF588A491D5C675300F228C7 /* CensusAPIClient.swift */,
+				AF588A571D5C693800F228C7 /* Request.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				AF588A4D1D5C67A500F228C7 /* LocationData.swift */,
 				AF588A4F1D5C67C400F228C7 /* ScoreModel.swift */,
 				AF588A511D5C67E600F228C7 /* ResultModel.swift */,
+				AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -342,11 +348,13 @@
 				AF3536141D5C5BA20001F117 /* GeoData.swift in Sources */,
 				AF3536061D5C5AD20001F117 /* TabBarController.swift in Sources */,
 				AF588A3A1D5C5F3C00F228C7 /* DemographicDetailViewController.swift in Sources */,
+				AF588A581D5C693800F228C7 /* Request.swift in Sources */,
 				AF588A4E1D5C67A500F228C7 /* LocationData.swift in Sources */,
 				AF3535E31D5C59050001F117 /* AppDelegate.swift in Sources */,
 				AF588A461D5C670800F228C7 /* LaborStatisticsAPIClient.swift in Sources */,
 				AF588A4A1D5C675300F228C7 /* CensusAPIClient.swift in Sources */,
 				AF588A521D5C67E600F228C7 /* ResultModel.swift in Sources */,
+				AF588A561D5C68FF00F228C7 /* LaborStatisticsData.swift in Sources */,
 				AF35360A1D5C5B1B0001F117 /* MapViewController.swift in Sources */,
 				AF588A341D5C5E3500F228C7 /* Constants.swift in Sources */,
 				AF588A441D5C66DA00F228C7 /* GovDataAPIClient.swift in Sources */,
