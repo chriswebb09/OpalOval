@@ -19,7 +19,7 @@ class DataStore {
     
     var cityDataPoints:[CitySDKData] = []
     var laborDataPoints:[LaborStatisticsData] = []
-    var USAJobsDataPoints:[USAJobsData] = []
+//    var USAJobsDataPoints:[USAJobsData] = []
     
     let level = "county"
     let zip = "19067"

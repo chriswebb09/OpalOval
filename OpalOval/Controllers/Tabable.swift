@@ -11,7 +11,9 @@ import UIKit
 protocol Tabable: UITabBarControllerDelegate  {
     //implemented in protocol extension
 }
+
 extension Tabable {
+    
     var resultViewController : ResultViewController { return ResultViewController() }
     var detailViewController : DetailViewController { return DetailViewController() }
     var economicDetailViewController : EconomicDetailViewController { return EconomicDetailViewController() }

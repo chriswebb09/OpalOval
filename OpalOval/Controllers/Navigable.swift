@@ -13,8 +13,9 @@ protocol Navigable {
 }
 
 extension Navigable {
+   
     func setupNavBar() -> UINavigationBar {
-        let appController = AppController()
+        var appController = AppController()
         let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, appController.view.frame.size.width, 64))
         return navigationBar
     }

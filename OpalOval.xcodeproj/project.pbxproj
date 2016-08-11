@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF3535E31D5C59050001F117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3535E21D5C59050001F117 /* AppDelegate.swift */; };
-		AF3535E81D5C59050001F117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3535E61D5C59050001F117 /* Main.storyboard */; };
 		AF3535EA1D5C59050001F117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3535E91D5C59050001F117 /* Assets.xcassets */; };
 		AF3535ED1D5C59050001F117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3535EB1D5C59050001F117 /* LaunchScreen.storyboard */; };
 		AF3535F51D5C598B0001F117 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3535F41D5C598B0001F117 /* AppController.swift */; };
@@ -44,6 +43,8 @@
 		AF588A561D5C68FF00F228C7 /* LaborStatisticsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */; };
 		AF588A581D5C693800F228C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A571D5C693800F228C7 /* Request.swift */; };
 		AF588A5A1D5C69E200F228C7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A591D5C69E200F228C7 /* SearchViewController.swift */; };
+		AF588A5C1D5C6A7E00F228C7 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */; };
+		AF588A5E1D5C77BF00F228C7 /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF588A5D1D5C77BF00F228C7 /* ResultView.xib */; };
 		C4E221B3E76D3BC5FBDB0276 /* Pods_OpalOval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,6 @@
 		8431AFF1FB78588E8687AE67 /* Pods-OpalOval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpalOval.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpalOval/Pods-OpalOval.release.xcconfig"; sourceTree = "<group>"; };
 		AF3535DF1D5C59050001F117 /* OpalOval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpalOval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3535E21D5C59050001F117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF3535E71D5C59050001F117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF3535E91D5C59050001F117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF3535EC1D5C59050001F117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF3535EE1D5C59050001F117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +89,8 @@
 		AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaborStatisticsData.swift; path = Models/LaborStatisticsData.swift; sourceTree = "<group>"; };
 		AF588A571D5C693800F228C7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Utils/Request.swift; sourceTree = "<group>"; };
 		AF588A591D5C69E200F228C7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
+		AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFont.swift; path = Utils/AppFont.swift; sourceTree = "<group>"; };
+		AF588A5D1D5C77BF00F228C7 /* ResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultView.xib; path = Views/ResultView.xib; sourceTree = "<group>"; };
 		B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpalOval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 			children = (
 				AF3535F71D5C59B10001F117 /* ResultView.swift */,
 				AF35360B1D5C5B3D0001F117 /* ResultCell.swift */,
+				AF588A5D1D5C77BF00F228C7 /* ResultView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				AF3535E21D5C59050001F117 /* AppDelegate.swift */,
-				AF3535E61D5C59050001F117 /* Main.storyboard */,
 				AF3535E91D5C59050001F117 /* Assets.xcassets */,
 				AF3535EB1D5C59050001F117 /* LaunchScreen.storyboard */,
 				AF3535EE1D5C59050001F117 /* Info.plist */,
@@ -205,6 +207,7 @@
 				AF588A471D5C672800F228C7 /* USAJobsAPIClient.swift */,
 				AF588A491D5C675300F228C7 /* CensusAPIClient.swift */,
 				AF588A571D5C693800F228C7 /* Request.swift */,
+				AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -286,9 +289,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF588A5E1D5C77BF00F228C7 /* ResultView.xib in Resources */,
 				AF3535ED1D5C59050001F117 /* LaunchScreen.storyboard in Resources */,
 				AF3535EA1D5C59050001F117 /* Assets.xcassets in Resources */,
-				AF3535E81D5C59050001F117 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +366,7 @@
 				AF588A441D5C66DA00F228C7 /* GovDataAPIClient.swift in Sources */,
 				AF35360C1D5C5B3D0001F117 /* ResultCell.swift in Sources */,
 				AF588A401D5C60E600F228C7 /* Navigable.swift in Sources */,
+				AF588A5C1D5C6A7E00F228C7 /* AppFont.swift in Sources */,
 				AF588A421D5C668400F228C7 /* CitySDKAPIClient.swift in Sources */,
 				AF588A541D5C681600F228C7 /* Mapable.swift in Sources */,
 				AF3536121D5C5B8C0001F117 /* CitySDKData.swift in Sources */,
@@ -387,14 +391,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AF3535E61D5C59050001F117 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF3535E71D5C59050001F117 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF3535EB1D5C59050001F117 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

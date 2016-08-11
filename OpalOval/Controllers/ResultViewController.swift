@@ -8,6 +8,12 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, Navigable, Tabable {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor=UIColor.lightGrayColor()
+        self.setupTabBar()
+        self.setupNavBar()
+    }
     
 }
