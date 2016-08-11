@@ -20,6 +20,7 @@ class AppController: UITabBarController, Tabable, Navigable {
         super.viewDidLoad()
         delegate = self
         self.view.addSubview(self.setupNavBar())
+        self.view.backgroundColor = UIColor.grayColor()
 //        self.currentViewController = ResultViewController()
 //        addCurrentViewController(self.currentViewController)
     }
@@ -62,8 +63,6 @@ class AppController: UITabBarController, Tabable, Navigable {
         newView.backgroundColor = UIColor.yellowColor()
         self.view.addSubview(newView)
     }
-
-
 }
 
 //extension AppController {
