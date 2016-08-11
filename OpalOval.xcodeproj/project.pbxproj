@@ -43,6 +43,7 @@
 		AF588A541D5C681600F228C7 /* Mapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A531D5C681600F228C7 /* Mapable.swift */; };
 		AF588A561D5C68FF00F228C7 /* LaborStatisticsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */; };
 		AF588A581D5C693800F228C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A571D5C693800F228C7 /* Request.swift */; };
+		AF588A5A1D5C69E200F228C7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A591D5C69E200F228C7 /* SearchViewController.swift */; };
 		C4E221B3E76D3BC5FBDB0276 /* Pods_OpalOval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		AF588A531D5C681600F228C7 /* Mapable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mapable.swift; path = Controllers/Mapable.swift; sourceTree = "<group>"; };
 		AF588A551D5C68FF00F228C7 /* LaborStatisticsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaborStatisticsData.swift; path = Models/LaborStatisticsData.swift; sourceTree = "<group>"; };
 		AF588A571D5C693800F228C7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Utils/Request.swift; sourceTree = "<group>"; };
+		AF588A591D5C69E200F228C7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
 		B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpalOval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				AF3535F41D5C598B0001F117 /* AppController.swift */,
+				AF588A591D5C69E200F228C7 /* SearchViewController.swift */,
 				AF3536011D5C5A680001F117 /* ResultViewController.swift */,
 				AF3536031D5C5A950001F117 /* DetailViewController.swift */,
 				AF3536051D5C5AD20001F117 /* TabBarController.swift */,
@@ -364,6 +367,7 @@
 				AF588A541D5C681600F228C7 /* Mapable.swift in Sources */,
 				AF3536121D5C5B8C0001F117 /* CitySDKData.swift in Sources */,
 				AF3535FC1D5C5A040001F117 /* APIRequest.swift in Sources */,
+				AF588A5A1D5C69E200F228C7 /* SearchViewController.swift in Sources */,
 				AF588A481D5C672800F228C7 /* USAJobsAPIClient.swift in Sources */,
 				AF588A381D5C5F1700F228C7 /* EducationDetailViewController.swift in Sources */,
 				AF588A3E1D5C60BB00F228C7 /* Tabable.swift in Sources */,
