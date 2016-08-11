@@ -16,43 +16,63 @@ class AppController: UITabBarController, Tabable, Navigable {
     var currentViewController: UIViewController!
     var containerView: UIView!
     
-    //var currentView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
-        self.currentViewController = ResultViewController()
-        addCurrentViewController(self.currentViewController)
-        //self.view.addSubview(self.setupNavBar())
-       
-        //self.currentView.addSubview(self.setupNavBar())
-        //self.currentView.backgroundColor=UIColor.lightGrayColor()
-        //self.view.addSubview(currentView)
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.addSubview(self.setupNavBar())
+//        self.currentViewController = ResultViewController()
+//        addCurrentViewController(self.currentViewController)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setupTabBar()
     }
     
     override func viewDidAppear(animated: Bool) {
         SwiftSpinner.showWithDuration(1.3, title: "TEAM DRAGON")
         SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 33.0))
     }
+    
+    override func loadView() {
+        super.loadView()
+        self.setUpView()
+    }
+    
+    
+    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+        print("Should select viewController: \(viewController.title) ?")
+        return true;
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-}
-
-extension AppController {
-    private func addCurrentViewController(controller: UIViewController) {
-        self.addChildViewController(controller)
-        self.containerView.addSubview(controller.view)
-        controller.view.frame = self.containerView.bounds
-        controller.view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        controller.didMoveToParentViewController(self)
+    
+    func setUpView() {
+        let viewFrame = CGRect(x: 0, y: 0, width: 150, height: 300)
+        self.view = UIView(frame: viewFrame)
+        self.view.backgroundColor = UIColor.clearColor()
         
+        let width: CGFloat = UIScreen.mainScreen().bounds.size.width
+        let height: CGFloat = UIScreen.mainScreen().bounds.size.height
+        let newView = UIView(frame: CGRect(x: (width * 0.10), y: (height * 0.25), width: (width * 0.75), height: (height / 2)))
+        newView.backgroundColor = UIColor.yellowColor()
+        self.view.addSubview(newView)
     }
 
+
 }
+
+//extension AppController {
+//    private func addCurrentViewController(controller: UIViewController) {
+//        self.addChildViewController(controller)
+//        self.containerView.addSubview(controller.view)
+//        controller.view.frame = self.containerView.bounds
+//        controller.view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+//        controller.didMoveToParentViewController(self)
+//    }
+//}
 

@@ -13,10 +13,15 @@ protocol Navigable {
 }
 
 extension Navigable {
-   
     func setupNavBar() -> UINavigationBar {
-        var appController = AppController()
-        let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, appController.view.frame.size.width, 64))
+        let appFonty = AppFont()
+        let width: CGFloat = UIScreen.mainScreen().bounds.size.width
+        let navigationBar = UINavigationBar(frame: CGRectMake(0, 0, width, 64))
+        navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:appFonty.appFontName, size:appFonty.appFontSize)!, NSForegroundColorAttributeName: UIColor.blueColor()]
+        let navigationItem = UINavigationItem(title: "Project Ovaltine")
+        let homeItem = UIBarButtonItem.init(title: "Home", style: .Done, target: nil, action: nil)
+        navigationItem.leftBarButtonItem = homeItem
+        navigationBar.setItems([navigationItem], animated: false)
         return navigationBar
     }
 }

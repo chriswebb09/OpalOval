@@ -44,7 +44,6 @@
 		AF588A581D5C693800F228C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A571D5C693800F228C7 /* Request.swift */; };
 		AF588A5A1D5C69E200F228C7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A591D5C69E200F228C7 /* SearchViewController.swift */; };
 		AF588A5C1D5C6A7E00F228C7 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */; };
-		AF588A5E1D5C77BF00F228C7 /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF588A5D1D5C77BF00F228C7 /* ResultView.xib */; };
 		C4E221B3E76D3BC5FBDB0276 /* Pods_OpalOval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +89,6 @@
 		AF588A571D5C693800F228C7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Utils/Request.swift; sourceTree = "<group>"; };
 		AF588A591D5C69E200F228C7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
 		AF588A5B1D5C6A7E00F228C7 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFont.swift; path = Utils/AppFont.swift; sourceTree = "<group>"; };
-		AF588A5D1D5C77BF00F228C7 /* ResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultView.xib; path = Views/ResultView.xib; sourceTree = "<group>"; };
 		B554D6BB3D2868FFA5E0C0A9 /* Pods_OpalOval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpalOval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,7 +177,6 @@
 			children = (
 				AF3535F71D5C59B10001F117 /* ResultView.swift */,
 				AF35360B1D5C5B3D0001F117 /* ResultCell.swift */,
-				AF588A5D1D5C77BF00F228C7 /* ResultView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF588A5E1D5C77BF00F228C7 /* ResultView.xib in Resources */,
 				AF3535ED1D5C59050001F117 /* LaunchScreen.storyboard in Resources */,
 				AF3535EA1D5C59050001F117 /* Assets.xcassets in Resources */,
 			);
